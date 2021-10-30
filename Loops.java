@@ -36,7 +36,7 @@ Problem link: https://www.hackerrank.com/challenges/java-loops/problem?isFullScr
 import java.util.*;
 import java.io.*;
 
-class Solution{
+class Loops{
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
