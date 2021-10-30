@@ -36,7 +36,7 @@ Problem link: https://www.hackerrank.com/challenges/java-loops/problem?isFullScr
 import java.util.*;
 import java.io.*;
 
-class Solution{
+class Loops{
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
@@ -46,6 +46,15 @@ class Solution{
             int n = in.nextInt();
 			
 			//code here
+            int sum = a;
+            String str = "";
+            
+            for (int j = 0; j < n; j++) {
+                sum += Math.pow(2, j) * b;
+                str += Integer.toString(sum) + " ";
+            }
+            
+            System.out.println(str.trim());
         }
         in.close();
     }
