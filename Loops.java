@@ -46,6 +46,15 @@ class Solution{
             int n = in.nextInt();
 			
 			//code here
+            int sum = a;
+            String str = "";
+            
+            for (int j = 0; j < n; j++) {
+                sum += Math.pow(2, j) * b;
+                str += Integer.toString(sum) + " ";
+            }
+            
+            System.out.println(str.trim());
         }
         in.close();
     }
