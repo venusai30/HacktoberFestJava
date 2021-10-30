@@ -42,7 +42,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+class Solution {
 
 	public static int B, H;
 	public static boolean flag;
