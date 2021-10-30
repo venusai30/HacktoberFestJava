@@ -62,14 +62,9 @@ Explanation
 import java.util.*;
 import java.io.*;
 
-
-
 class Datatypes{
     public static void main(String []argh)
     {
-
-
-
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
 
@@ -82,6 +77,11 @@ class Datatypes{
                 System.out.println(x+" can be fitted in:");
                 if(x>=-128 && x<=127)System.out.println("* byte");
                 //Complete the code
+                short s = (short) (Math.pow(2, 15) - 1);
+                int in = (int) (Math.pow(2, 31) - 1);
+                if (x >= -(1 + s) && x <= s) System.out.println("* short");
+                if (x >= -(1 + in) && x <= in) System.out.println("* int");
+                System.out.println("* long");
             }
             catch(Exception e)
             {
@@ -89,5 +89,6 @@ class Datatypes{
             }
 
         }
+        sc.close();
     }
 }
